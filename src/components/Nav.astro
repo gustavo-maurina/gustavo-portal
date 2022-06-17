@@ -1,11 +1,11 @@
 <script>
+  const nav = document.getElementById('nav-bar')
+  document.addEventListener('scroll', handleNav)
+
   function handleNav() {
-    console.log(nav);
     nav.style.visibility = window.scrollY > 50 ? 'hidden' : 'visible'
   }
-  document.addEventListener('scroll', handleNav)
-  const nav = document.getElementById('nav-bar')
-  console.log(nav);
+
 </script>
 
 <style>
