@@ -1,0 +1,24 @@
+<script>
+  function handleNav() {
+    console.log(nav);
+    nav.style.visibility = window.scrollY > 50 ? 'hidden' : 'visible'
+  }
+  document.addEventListener('scroll', handleNav)
+  const nav = document.getElementById('nav-bar')
+  console.log(nav);
+</script>
+
+<style>
+  img {
+    width:200px;
+    height: auto;
+  }
+</style>
+
+<nav id='nav-bar' class="w-full fixed h-20 flex place-items-center">
+  <ul class="container m-auto flex items-center gap-8 px-4">
+    <li>
+      <img src="/assets/logo.png" width="847px" height="111px" alt="">
+    </li>
+  </ul>
+</nav>

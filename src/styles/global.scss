@@ -1,0 +1,35 @@
+@import "./tailwind.scss";
+
+body,
+html {
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Inter", "system-ui", sans-serif;
+  @apply text-zinc-300;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.home-bg {
+  background-image: url("/assets/notify-gradient.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    height: fit-content;
+  }
+}
