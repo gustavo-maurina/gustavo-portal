@@ -9,7 +9,7 @@ import RoundedGustavoImage from "./RoundedGustavoImage.astro";
     background-color: #0a0a0a;
     @apply flex flex-col lg:flex-row w-[90vw] lg:w-fit justify-center
     items-center gap-8 p-8 rounded-xl max-w-[800px] text-center border
-    border-gray-700 h-fit;
+    border-gray-700 h-auto;
   }
 
 
@@ -21,10 +21,10 @@ import RoundedGustavoImage from "./RoundedGustavoImage.astro";
       Gustavo Farias Maurina
     </h1>
     <RoundedGustavoImage />
+  </div>
+
+  <div class="lg:w-3/5 grid place-items-center gap-8 h-full">
+    <Description />
 
   </div>
-<div class="lg:w-3/5 grid place-items-center gap-8 h-full">
-  <Description />
-
-</div>
 </div>
